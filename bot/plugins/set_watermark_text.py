@@ -25,7 +25,7 @@ async def _(c, m):
     watermark_text = ' '.join(m.command[1:])
     if len(watermark_text) > 40:
         await m.reply_text(
-            text=f"The watermark text you provided (__{watermark_text}__) is `{len(watermark_text)}` characters long! You cannot set watermark text greater than 30 characters.",
+            text=f"The watermark text you provided (__{watermark_text}__) is `{len(watermark_text)}` characters long! You cannot set watermark text greater than 40 characters.",
             quote=True,
             parse_mode="markdown"
         )
